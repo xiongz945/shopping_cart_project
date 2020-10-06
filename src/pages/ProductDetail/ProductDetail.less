@@ -1,0 +1,213 @@
+.productPic {
+  max-width: 90%;
+  max-height: 300px;
+}
+
+.blueBold {
+  color: #354168;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  line-height: 36px;
+
+  @media (min-width: 769px) {
+    font-size: 26px;
+  }
+}
+
+.detailSection {
+  background: #ffffff !important;
+  padding: 30px;
+
+  @media (min-width: 768px) {
+    padding: 50px 50px 50px 8% !important;
+  }
+}
+.inputNumber {
+  width: 15%;
+  height: 100%;
+  background: #f6f6f6;
+  border: 2px solid #cfcfcf;
+  border-radius: 5px;
+}
+.productDesc {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ababae;
+  margin-top: 30px;
+
+  @media (min-width: 769px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+img.descImage {
+  width: 100%;
+  height: auto;
+
+  @media (min-width: 769px) {
+    width: auto;
+    height: 300px;
+  }
+}
+img.descImageReverse {
+  width: 100%;
+  height: auto;
+  float: none;
+
+  @media (min-width: 769px) {
+    width: auto;
+    height: 300px;
+    float: left;
+  }
+}
+.sectionStyling {
+  padding: 40px;
+
+  @media (min-width: 769px) {
+    padding: 80px 80px 80px 7%;
+  }
+
+  @media (max-width: 484px) {
+    padding: 25px;
+  }
+}
+.rowAdjust {
+  flex-direction: row;
+  @media (min-width: 769px) {
+    margin-top: 30px;
+    flex-direction: row-reverse;
+  }
+}
+.addMargin {
+  margin-top: 2%;
+}
+.spaceAdjust {
+  margin-top: 15px;
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+  }
+}
+.grayText {
+  color: #ababae;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  line-height: 19px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+.addToCart {
+  width: 183px;
+  height: 38px;
+  margin-left: 23px;
+  font-weight: 900;
+  font-size: 14px;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  line-height: 19px;
+  background: #1890ff;
+  border-radius: 50px;
+}
+
+.featureTitle {
+  margin-top: 50px;
+  color: #354168;
+  font-weight: 900;
+  font-size: 18px;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  line-height: 25px;
+}
+
+.features {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #354168;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  line-height: 19px;
+}
+
+.installmentButton {
+  background: none;
+  border: 0;
+  border-left: none;
+  height: fit-content;
+
+  &:focus {
+    box-sizing: border-box;
+    background: #fff;
+    border: 2px solid #f0f0f0;
+    border-radius: 20px;
+  }
+}
+
+.planPeriodArea {
+  margin-top: 32px;
+  background: #f6f6f6;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.planOption {
+  :global {
+    .ant-radio-button-wrapper {
+      border: 0;
+      border-left: none;
+      background: none;
+    }
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+      color: #354168;
+      box-sizing: border-box;
+      background: #ffffff;
+      border: 2px solid #a8a8a8;
+      border-radius: 8px;
+    }
+  }
+  background: none;
+  border: 0;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  color: #354168;
+}
+
+.planTypeOption {
+  :global {
+    .ant-radio-button-wrapper:first-child:last-child {
+      min-height: 43px;
+      height: fit-content;
+      background: #f7f7f7;
+      border: 1px solid #e8e8e8;
+      box-sizing: border-box;
+      border-radius: 30px;
+      color: #8c8c8c;
+      font-family: Avenir, sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      width: fit-content;
+      // min-width: 180px;
+      margin-top: 22px;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+      color: #354168;
+      border: 3px solid #1890ff;
+      font-weight: 800;
+    }
+  }
+}

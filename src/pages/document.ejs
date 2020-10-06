@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Demo</title>
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNXlzWlG_uUNlhwZD0UgS1x4qxtMi7CA0&libraries=places"></script>
+
+    <!-- Start of Async Drift Code -->
+    <script>
+        !function() {
+          var t;
+          if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+          t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+          t.factory = function(e) {
+            return function() {
+              var n;
+              return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function(e) {
+            t[e] = t.factory(e);
+          }), t.load = function(t) {
+            var e, n, o, i;
+            e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+            n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+          });
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+    </script>
+    <!-- End of Async Drift Code --> 
+
+    <style>
+
+      @font-face {
+        font-family: Avenir-Roman;
+        src: url("/fonts/Avenir-Roman.ttf");
+      }
+
+      @font-face {
+        font-family: Avenir-Light;
+        src: url("fonts/Avenir-Light.ttf");
+      }
+
+      @font-face {
+        font-family: Avenir-Heavy;
+        src: url("fonts/Avenir-Heavy.ttf");
+      }
+
+      @font-face {
+        font-family: Avenir-Black;
+        src: url("fonts/Avenir-Black.ttf");
+      }
+
+      body{
+        font-family: Avenir-Roman;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <noscript>Sorry, we need js to run correctly!</noscript>
+    <div id="root"></div>
+  </body>
+</html>
